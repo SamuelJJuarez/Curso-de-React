@@ -37,11 +37,13 @@ function App() {
   
 
   useEffect(() => {
+    getFrase();
     setFrase("");
   }, [])
 
   
   useEffect(() => {
+    getChiste();
     setChiste("");
   }, [])
   
