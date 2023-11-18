@@ -10,7 +10,7 @@ const Home = () => {
     }, [])
 
     return (
-        <div className="text-black font-bold">
+        <div className="text-black">
             <h1>Home</h1>
             {loading ? <span>Cargando...</span>: null}
             {error ? <span>Hubo un error</span>: null}
