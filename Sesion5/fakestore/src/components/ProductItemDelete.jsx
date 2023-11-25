@@ -4,7 +4,7 @@ const ProductItemDelete = ({product}) => {
     const {dispatch} = useCartContext();
 
     const removeOfCart = () => {
-        dispatch({type: "REMOVE_OF_CART", remove: product.id})
+        dispatch({type: "REMOVE_OF_CART", payload: product.id})
         alert("Producto eliminado del carrito")
     }
 
