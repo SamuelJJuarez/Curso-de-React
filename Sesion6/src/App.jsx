@@ -21,8 +21,6 @@ function App() {
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/login" element={<Login />} />
               </Routes>
-
-              
             </div>
           </div>
         </main>
