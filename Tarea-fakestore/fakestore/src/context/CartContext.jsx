@@ -16,7 +16,7 @@ const cartReducer = (state, action) => {
 }
 
 const initialValue= {
-    cart: JSON.parse(localStorage.getItem("cart") || [])
+    cart: JSON.parse(localStorage.getItem("cart") ?? "[]")
 }
 
 
