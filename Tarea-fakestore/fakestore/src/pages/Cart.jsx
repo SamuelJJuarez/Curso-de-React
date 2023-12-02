@@ -20,7 +20,7 @@ const Cart = () =>{
                     <ProductItemDelete product={product} key={product.id}/>
                 ))}
             </ul>
-            <span className="text-2xl font-bold text-black">Total de la compra: {total}</span>
+            <span className="text-2xl font-bold text-black">Total de la compra: ${total}</span>
         </div>
     )
 }

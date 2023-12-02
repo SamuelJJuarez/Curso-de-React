@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Cart from './pages/Cart';
 import { CartProvider } from './context/CartContext';
+import Search from "./pages/Search";
+import MoreInfo from "./pages/MoreInfo";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/search" element={<Search />} />
+                <Route path="/info" element={<MoreInfo />} />
               </Routes>
             </div>
           </div>
