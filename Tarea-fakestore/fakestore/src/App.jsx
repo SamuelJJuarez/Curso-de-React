@@ -5,6 +5,7 @@ import Cart from './pages/Cart';
 import { CartProvider } from './context/CartContext';
 import Search from "./pages/Search";
 import MoreInfo from "./pages/MoreInfo";
+let num = 3;
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/search" element={<Search />} />
-                <Route path="/info" element={<MoreInfo />} />
+                <Route path={`/info/${num}`} element={<MoreInfo />} />
               </Routes>
             </div>
           </div>

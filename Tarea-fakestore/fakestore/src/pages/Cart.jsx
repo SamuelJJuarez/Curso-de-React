@@ -6,6 +6,12 @@ const Cart = () =>{
     const [total, setTotal] = useState(0);
     const {state: {cart}} = useCartContext();
 
+    const [amountProducts, setAmountProducts] = useState(0);
+
+    useEffect(()=>{
+        setAmountProducts(cart.length);
+    }, [cart])
+
     useEffect(()=>{
         setTotal(
             cart.reduce((acc, product) => acc + product.price, 0).toFixed(2)
@@ -21,6 +27,7 @@ const Cart = () =>{
                 ))}
             </ul>
             <span className="text-2xl font-bold text-black">Total de la compra: ${total}</span>
+            <span className="text-2xl font-bold text-black">Total de objetos : {amountProducts}</span>
         </div>
     )
 }

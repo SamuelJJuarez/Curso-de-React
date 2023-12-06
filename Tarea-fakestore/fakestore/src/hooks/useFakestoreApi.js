@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useReducer } from "react"
 import  axios  from "axios";
 
 export const useFakestoreApi = () => {
